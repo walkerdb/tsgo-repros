@@ -9,6 +9,7 @@ releases and nightlies.
 
 | ID | Bug | Reproduces on | Upstream |
 |----|-----|---------------|----------|
+| [0002](repros/0002-watch-builds-twice-during-git-checkout) | `--watch` builds twice during a large `git checkout`; the first build can report false errors | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
 
 ## Running
 
