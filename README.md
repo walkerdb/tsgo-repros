@@ -9,6 +9,7 @@ releases and nightlies.
 
 | ID | Bug | Reproduces on | Upstream |
 |----|-----|---------------|----------|
+| [0001](repros/0001-watch-rebuilds-on-non-source-files) | `--watch` rebuilds when a non-source file changes under an included directory | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
 
 ## Running
 
