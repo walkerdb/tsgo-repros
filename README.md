@@ -32,6 +32,7 @@ releases and nightlies.
 | [0021](repros/0021-package-json-completions-order-varies) | package.json dependency completions come back in a random order | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
 | [0022](repros/0022-lsp-fsevents-drop-overflows-every-watched-root) | On macOS, a burst of writes under one watched directory overflows every watched directory | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0023](repros/0023-lsp-fsevents-watch-merges-into-distant-ancestor) | On macOS, crowded watches merge into a recursive watch on a distant ancestor | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
+| [0024](repros/0024-lsp-watch-glob-covers-all-of-users) | Without a package.json, the language server asks to watch all of /Users (macOS) | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 
 ## Running
 
