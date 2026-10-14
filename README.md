@@ -31,6 +31,7 @@ releases and nightlies.
 | [0020](repros/0020-build-watch-reloads-wildcards-every-cycle) | `tsc -b --watch` re-reads the include directory tree on every file event | 7.0.2 (both modes), 7.1.0-dev.20261013.1 (`tsc -b --watch`) | not filed |
 | [0021](repros/0021-package-json-completions-order-varies) | package.json dependency completions come back in a random order | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
 | [0022](repros/0022-lsp-fsevents-drop-overflows-every-watched-root) | On macOS, a burst of writes under one watched directory overflows every watched directory | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
+| [0023](repros/0023-lsp-fsevents-watch-merges-into-distant-ancestor) | On macOS, crowded watches merge into a recursive watch on a distant ancestor | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 
 ## Running
 
