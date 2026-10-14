@@ -16,7 +16,7 @@ TSGO_VERSION=next ./repro.sh  # nightly
 ```
 
 Exits 1 while the bug reproduces, 0 once it is fixed. Needs Node 22 (the LSP client is `lib/lsp-client.mjs`) and the
-repo checked out under `$HOME`. Takes about 5 s. It checks the watcher globs the server registers with the client, so
+repo checked out under `$HOME`. Takes about 15 s. It checks the watcher globs the server registers with the client, so
 it runs on any platform; on Linux, where `/home/<name>` is already excluded, it should not reproduce (not tested).
 
 ## Bug report draft (for microsoft/TypeScript)
