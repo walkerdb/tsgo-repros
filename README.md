@@ -39,6 +39,7 @@ releases and nightlies.
 | [0028](repros/0028-rename-files-conflicting-edits) | Moving a file and its import together returns two conflicting edits for the import | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0029](repros/0029-format-duplicate-trailing-whitespace-edit) | Range and on-type formatting return the same trailing-whitespace delete twice | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0030](repros/0030-definition-jsdoc-this-start-of-file) | Go to definition on a `this` declared by JSDoc `@this` returns the start of the file | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
+| [0031](repros/0031-line-end-inside-u2028) | A line that ends in U+2028 or U+2029 ends inside the line break's UTF-8 encoding | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 
 ## Running
 
