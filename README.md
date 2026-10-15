@@ -37,6 +37,7 @@ releases and nightlies.
 | [0026](repros/0026-format-huge-tabsize-memory) | Formatting with a huge tabSize allocates gigabytes | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0027](repros/0027-rename-file-rewrites-unresolved-imports) | Renaming a file rewrites unresolved relative imports in files that do not import it | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0028](repros/0028-rename-files-conflicting-edits) | Moving a file and its import together returns two conflicting edits for the import | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
+| [0029](repros/0029-format-duplicate-trailing-whitespace-edit) | Range and on-type formatting return the same trailing-whitespace delete twice | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 
 ## Running
 
