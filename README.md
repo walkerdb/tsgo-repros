@@ -33,6 +33,7 @@ releases and nightlies.
 | [0022](repros/0022-lsp-fsevents-drop-overflows-every-watched-root) | On macOS, a burst of writes under one watched directory overflows every watched directory | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0023](repros/0023-lsp-fsevents-watch-merges-into-distant-ancestor) | On macOS, crowded watches merge into a recursive watch on a distant ancestor | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0024](repros/0024-lsp-watch-glob-covers-all-of-users) | Without a package.json, the language server asks to watch all of /Users (macOS) | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
+| [0025](repros/0025-lsp-panics-on-malformed-input) | Malformed client input makes the language server panic and exit with status 2 | 7.0.2 (13 of 13 inputs), 7.1.0-dev.20261014.1 (11 of 13) | not filed |
 
 ## Running
 
