@@ -27,6 +27,7 @@ releases and nightlies.
 | [0027](repros/0027-rename-file-rewrites-unresolved-imports) | Renaming a file rewrites unresolved relative imports in files that do not import it | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0028](repros/0028-rename-files-conflicting-edits) | Moving a file and its import together returns two conflicting edits for the import | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0033](repros/0033-api-synthesized-node-prints-comments-at-offset-zero) | JS API: printing a file that contains a factory-built node prints the comments at offset 0 around it | 7.0.2, 7.1.0-dev.20261021.1 | not filed |
+| [0034](repros/0034-api-factory-update-drops-text-range) | JS API: factory update functions drop the original node's text range, so printing loses its comments | 7.0.2, 7.1.0-dev.20261021.1 | not filed |
 
 ## Running
 
