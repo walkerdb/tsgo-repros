@@ -4,7 +4,7 @@
 |-|-|
 | Status | reproduces; not filed |
 | Area | emit (printer), comments, source maps |
-| Reproduces on | 7.0.2, 7.1.0-dev.20261013.1 (both tested) |
+| Reproduces on | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 (all tested) |
 | Does not reproduce on | TypeScript 5.9.3 and 6.0.3 (JS compiler, used as the reference) |
 | Upstream | not filed yet |
 

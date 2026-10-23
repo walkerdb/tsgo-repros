@@ -89,6 +89,13 @@ watch_settle() {
 	done
 }
 
+# Ends the run without a verdict when this machine cannot show the bug (e.g. a macOS-only repro on Linux): prints
+# SKIPPED and exits 77.
+skip() {
+	echo "SKIPPED: $1"
+	exit 77
+}
+
 # Ends the run: prints the verdict and exits 1 when the bug reproduced, 0 when it did not.
 verdict() {
 	local reproduced="$1" summary="$2"

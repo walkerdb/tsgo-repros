@@ -4,8 +4,8 @@
 |-|-|
 | Status | reproduces; not filed |
 | Area | `tsc -b --watch` (and `tsc --watch` in 7.0.2) |
-| Reproduces on | 7.0.2 (both modes), 7.1.0-dev.20261013.1 (`tsc -b --watch`) |
-| Does not reproduce on | 7.1.0-dev.20261013.1 `tsc --watch` (0 directories read per edit) |
+| Reproduces on | 7.0.2 (both modes), 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 (`tsc -b --watch`) |
+| Does not reproduce on | 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 `tsc --watch` (0 directories read per edit) |
 | Upstream | not filed yet |
 
 ## Run

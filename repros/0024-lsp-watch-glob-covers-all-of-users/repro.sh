@@ -2,6 +2,8 @@
 # Without a package.json in the project, the language server asks the client to watch all of /Users (macOS).
 source "$(dirname "$0")/../../lib/common.sh"
 HERE="$(cd "$(dirname "$0")" && pwd)"
+# Linux already excludes /home/<name>, so only macOS can show the bug; 7.0.2 does not reproduce on Linux.
+[[ "$(uname -s)" == Darwin ]] || skip "needs macOS (/Users)"
 
 tsgo_install
 make_workdir

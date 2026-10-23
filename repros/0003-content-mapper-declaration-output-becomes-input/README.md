@@ -4,7 +4,7 @@
 |-|-|
 | Status | reproduces; not filed |
 | Area | content mappers (`contentMappers`, `--runExternalCode`), `tsc -b`, `tsc --watch`, `tsc -b --watch` |
-| Reproduces on | 7.1.0-dev.20261013.1 |
+| Reproduces on | 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 |
 | Does not reproduce on | 7.0.2 (has no content mapper support: `error TS5072: Unknown build option '--runExternalCode'`) |
 | Upstream | not filed yet |
 

@@ -4,7 +4,7 @@
 |-|-|
 | Status | reproduces; not filed |
 | Area | JS API SDK (`typescript/ast/factory`, `typescript/ast/visitor`), printer |
-| Reproduces on | 7.0.2, 7.1.0-dev.20261021.1 |
+| Reproduces on | 7.0.2, 7.1.0-dev.20261021.1, 7.1.0-beta, 7.1.0-dev.20261023.1 |
 | Upstream | not filed yet |
 
 ## Run

@@ -4,7 +4,7 @@
 |-|-|
 | Status | reproduces; not filed |
 | Area | `tsc` CLI, signal handling |
-| Reproduces on | 7.0.2, 7.1.0-dev.20261013.1 (both tested) |
+| Reproduces on | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 (all tested) |
 | Does not reproduce on | not known |
 | Upstream | not filed yet |
 
@@ -15,9 +15,9 @@
 TSGO_VERSION=next ./repro.sh  # nightly
 ```
 
-Exits 1 while the bug reproduces, 0 once it is fixed. The script generates a project that takes about 10 s to check,
+Exits 1 while the bug reproduces, 0 once it is fixed. The script generates a project that takes several seconds to check,
 runs it once without a signal, then sends SIGINT (and SIGTERM, and SIGINT with `--incremental` and with `--watch`) 2 s
-after start and measures how long the process takes to exit. It reproduces when the plain `tsc -p` takes over 5 s and
+after start and measures how long the process takes to exit. It reproduces when the plain `tsc -p` takes over 1 s and
 over half of the remaining check time to exit. The whole script takes about a minute.
 
 ## Bug report draft (for microsoft/TypeScript)

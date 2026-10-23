@@ -5,7 +5,7 @@ source "$(dirname "$0")/../../lib/common.sh"
 tsgo_install
 make_workdir
 
-# 64 copies of one function whose control flow analysis is quadratic: about 10 s of checking, under 300 MB.
+# 64 copies of one function whose control flow analysis is quadratic: several seconds of checking, under 300 MB.
 mkdir src
 {
 	printf 'declare function c(): boolean;\ndeclare function use(v: unknown): void;\n'
@@ -59,7 +59,8 @@ for mode in "INT" "TERM" "INT --incremental" "INT --watch"; do
 done
 
 # A process that honours the signal exits within a fraction of a second. Call it reproduced when the plain check
-# (no --incremental, no --watch) takes over 5 s and over half the remaining check time to exit after SIGINT.
+# (no --incremental, no --watch) takes over 1 s and over half the remaining check time to exit after SIGINT. The
+# threshold is relative because the check gets faster between versions (7.0.2 about 8 s, 7.1 about 6 s).
 reproduced=0
-if (( plain_ms > 5000 && plain_ms * 2 > full_ms - 2000 )); then reproduced=1; fi
+if (( plain_ms > 1000 && plain_ms * 2 > full_ms - 2000 )); then reproduced=1; fi
 verdict "$reproduced" "full check $full_ms ms; time from signal (sent at 2 s) to exit: ${summary[*]}"

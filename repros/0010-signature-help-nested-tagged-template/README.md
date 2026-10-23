@@ -4,7 +4,7 @@
 |-|-|
 | Status | reproduces; not filed |
 | Area | language server, signature help |
-| Reproduces on | 7.0.2, 7.1.0-dev.20261013.1 |
+| Reproduces on | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 |
 | Does not reproduce on | none known |
 | Upstream | not filed yet |
 

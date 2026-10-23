@@ -9,30 +9,30 @@ releases and nightlies.
 
 | ID | Bug | Reproduces on | Upstream |
 |----|-----|---------------|----------|
-| [0001](repros/0001-watch-misses-edits-through-symlinked-directories) | Watch misses edits to files under a symlinked directory | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0002](repros/0002-watch-misses-save-during-first-build) | Watch misses a save made during the first build | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0003](repros/0003-content-mapper-declaration-output-becomes-input) | A content-mapped file's declaration output becomes an input of the next build | 7.1.0-dev.20261013.1 | not filed |
-| [0005](repros/0005-watch-compiles-half-written-save) | Watch compiles a save that is still being written | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0006](repros/0006-ts2590-depends-on-checker-count) | TS2590 is reported or not depending on `--checkers` | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0008](repros/0008-check-ignores-sigint) | `tsc` keeps type checking after SIGINT or SIGTERM | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0010](repros/0010-signature-help-nested-tagged-template) | Signature help in a tagged template or JSX element nested in a call shows the outer call | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0011](repros/0011-watch-own-outputs-start-a-rebuild) | `tsc --watch` starts a second build after every edit because of its own outputs | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0012](repros/0012-watch-new-directory-starts-a-rebuild) | Creating any directory in a watched directory starts a full build | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0014](repros/0014-emit-partially-emitted-expression-unwind) | Nested type assertions reorder comments and source map ends in emit | 7.0.2, 7.1.0-dev.20261013.1 | not filed |
-| [0020](repros/0020-build-watch-reloads-wildcards-every-cycle) | `tsc -b --watch` re-reads the include directory tree on every file event | 7.0.2 (both modes), 7.1.0-dev.20261013.1 (`tsc -b --watch`) | not filed |
+| [0001](repros/0001-watch-misses-edits-through-symlinked-directories) | Watch misses edits to files under a symlinked directory | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0002](repros/0002-watch-misses-save-during-first-build) | Watch misses a save made during the first build | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0003](repros/0003-content-mapper-declaration-output-becomes-input) | A content-mapped file's declaration output becomes an input of the next build | 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0005](repros/0005-watch-compiles-half-written-save) | Watch compiles a save that is still being written | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0006](repros/0006-ts2590-depends-on-checker-count) | TS2590 is reported or not depending on `--checkers` | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0008](repros/0008-check-ignores-sigint) | `tsc` keeps type checking after SIGINT or SIGTERM | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0010](repros/0010-signature-help-nested-tagged-template) | Signature help in a tagged template or JSX element nested in a call shows the outer call | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0011](repros/0011-watch-own-outputs-start-a-rebuild) | `tsc --watch` starts a second build after every edit because of its own outputs | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0012](repros/0012-watch-new-directory-starts-a-rebuild) | Creating any directory in a watched directory starts a full build | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0014](repros/0014-emit-partially-emitted-expression-unwind) | Nested type assertions reorder comments and source map ends in emit | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0020](repros/0020-build-watch-reloads-wildcards-every-cycle) | `tsc -b --watch` re-reads the include directory tree on every file event | 7.0.2 (both modes), 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 (`tsc -b --watch`) | not filed |
 | [0022](repros/0022-lsp-fsevents-drop-overflows-every-watched-root) | On macOS, a burst of writes under one watched directory overflows every watched directory | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0023](repros/0023-lsp-fsevents-watch-merges-into-distant-ancestor) | On macOS, crowded watches merge into a recursive watch on a distant ancestor | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
 | [0024](repros/0024-lsp-watch-glob-covers-all-of-users) | Without a package.json, the language server asks to watch all of /Users (macOS) | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
-| [0025](repros/0025-lsp-panics-on-malformed-input) | Malformed client input makes the language server panic and exit with status 2 | 7.0.2 (13 of 13 inputs), 7.1.0-dev.20261014.1 (11 of 13) | not filed |
-| [0027](repros/0027-rename-file-rewrites-unresolved-imports) | Renaming a file rewrites unresolved relative imports in files that do not import it | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
-| [0028](repros/0028-rename-files-conflicting-edits) | Moving a file and its import together returns two conflicting edits for the import | 7.0.2, 7.1.0-dev.20261014.1 | not filed |
-| [0033](repros/0033-api-synthesized-node-prints-comments-at-offset-zero) | JS API: printing a file that contains a factory-built node prints the comments at offset 0 around it | 7.0.2, 7.1.0-dev.20261021.1 | not filed |
-| [0034](repros/0034-api-factory-update-drops-text-range) | JS API: factory update functions drop the original node's text range, so printing loses its comments | 7.0.2, 7.1.0-dev.20261021.1 | not filed |
+| [0025](repros/0025-lsp-panics-on-malformed-input) | Malformed client input makes the language server panic and exit with status 2 | 7.0.2 (13 of 13 inputs), 7.1.0-dev.20261014.1, 7.1.0-beta, 7.1.0-dev.20261023.1 (11 of 13) | not filed |
+| [0027](repros/0027-rename-file-rewrites-unresolved-imports) | Renaming a file rewrites unresolved relative imports in files that do not import it | 7.0.2, 7.1.0-dev.20261014.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0028](repros/0028-rename-files-conflicting-edits) | Moving a file and its import together returns two conflicting edits for the import | 7.0.2, 7.1.0-dev.20261014.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0033](repros/0033-api-synthesized-node-prints-comments-at-offset-zero) | JS API: printing a file that contains a factory-built node prints the comments at offset 0 around it | 7.0.2, 7.1.0-dev.20261021.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
+| [0034](repros/0034-api-factory-update-drops-text-range) | JS API: factory update functions drop the original node's text range, so printing loses its comments | 7.0.2, 7.1.0-dev.20261021.1, 7.1.0-beta, 7.1.0-dev.20261023.1 | not filed |
 
 ## Running
 
-Requirements: bash, npm, and whatever a repro lists (e.g. git). Tested on Linux; 0022 and 0023 need macOS (they print
-"skipped" elsewhere).
+Requirements: bash, npm, and whatever a repro lists (e.g. git). Tested on Linux; 0022, 0023 and 0024 need macOS (they
+print "skipped" elsewhere).
 
 ```sh
 ./run-all.sh                                   # every repro, against the latest release
@@ -55,8 +55,9 @@ receives no file events at all, which hides watch bugs.
 ## Conventions
 
 - Each repro is `repros/NNNN-short-slug/`, numbered in the order added; numbers are never reused.
-- `repro.sh` exits 1 when the bug reproduces, 0 when it doesn't, and 2 or more when the script itself failed. It ends
-  with one line starting `REPRODUCED:` or `NOT REPRODUCED:`.
+- `repro.sh` exits 1 when the bug reproduces, 0 when it doesn't, 77 when this machine can't show the bug (e.g. a
+  macOS-only repro on Linux; use `skip` from `lib/common.sh`), and any other code when the script itself failed. It
+  ends with one line starting `REPRODUCED:`, `NOT REPRODUCED:` or `SKIPPED:`.
 - `README.md` holds the status table, how to run the repro, and the bug report, written so it can be pasted into an
   upstream issue.
 - When an issue is filed, link it in the repro's README and in the table above. When a fix ships, record the first

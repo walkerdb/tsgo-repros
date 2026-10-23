@@ -4,8 +4,8 @@
 |-|-|
 | Status | reproduces; not filed |
 | Area | language server (`tsc --lsp --stdio`) |
-| Reproduces on | 7.0.2 (13 of 13 inputs), 7.1.0-dev.20261014.1 (11 of 13 inputs) |
-| Does not reproduce on | none known; two of the inputs no longer crash on 7.1.0-dev.20261014.1 (see below) |
+| Reproduces on | 7.0.2 (13 of 13 inputs), 7.1.0-dev.20261014.1, 7.1.0-beta, 7.1.0-dev.20261023.1 (11 of 13 inputs) |
+| Does not reproduce on | none known; two of the inputs no longer crash on 7.1.0-dev.20261014.1 and later (see below) |
 | Upstream | not filed yet |
 
 Found by a differential audit (maschwenk/tsrs PR #513) against tsgo at commit b85298b6a81f. That audit said each of

@@ -4,7 +4,7 @@ source "$(dirname "$0")/../../lib/common.sh"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 
 # The bug is in the FSEvents backend; other platforms have no builtin watcher for the language server.
-[[ "$(uname -s)" == Darwin ]] || verdict 0 "skipped: needs macOS (FSEvents)"
+[[ "$(uname -s)" == Darwin ]] || skip "needs macOS (FSEvents)"
 
 tsgo_install
 make_workdir

@@ -17,9 +17,10 @@ for dir in repros/*/; do
 	case "$code" in
 		0) result="fixed" ;;
 		1) result="reproduces" ;;
+		77) result="skipped: ${out##*SKIPPED: }" ;;
 		*) result="error ($code)"; status=2 ;;
 	esac
 	printf '%-50s %s\n' "$name" "$result"
-	(( code > 1 )) && printf '%s\n' "$out" | tail -20 | sed 's/^/    /'
+	[[ "$result" == error* ]] && printf '%s\n' "$out" | tail -20 | sed 's/^/    /'
 done
 exit "$status"

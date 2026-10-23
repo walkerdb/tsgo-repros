@@ -15,8 +15,8 @@
 TSGO_VERSION=next ./repro.sh  # nightly
 ```
 
-Exits 1 while the bug reproduces, 0 once it is fixed. Needs macOS (on other platforms it prints "skipped" and exits
-0) and Node 22 (the LSP client is `lib/lsp-client.mjs`). Takes about 20 s.
+Exits 1 while the bug reproduces, 0 once it is fixed. Needs macOS (on other platforms it prints "SKIPPED" and exits
+77) and Node 22 (the LSP client is `lib/lsp-client.mjs`). Takes about 20 s.
 
 ## Bug report draft (for microsoft/TypeScript)
 

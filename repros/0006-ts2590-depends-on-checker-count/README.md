@@ -4,7 +4,7 @@
 |-|-|
 | Status | reproduces; not filed |
 | Area | checker, parallel type checking |
-| Reproduces on | 7.0.2, 7.1.0-dev.20261013.1 (both tested) |
+| Reproduces on | 7.0.2, 7.1.0-dev.20261013.1, 7.1.0-beta, 7.1.0-dev.20261023.1 (all tested) |
 | Does not reproduce on | not known |
 | Upstream | not filed yet |
 
